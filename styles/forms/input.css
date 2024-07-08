@@ -1,0 +1,18 @@
+input, select, textarea {
+  width: 100%;
+  border-radius: .8rem;
+  appearance: none;
+  outline: 1px solid var(--input-stroke);
+  border: 2px solid transparent;
+  padding: 1.6rem;
+}
+
+.input-wrapper, .text-area {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+label {
+  font: 400 1.4rem var(--font-open);
+}

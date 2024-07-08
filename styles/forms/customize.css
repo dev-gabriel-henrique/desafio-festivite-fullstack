@@ -1,0 +1,23 @@
+.customize {
+  & .radio-wrapper {
+    display: grid;
+
+    grid-template-columns: repeat(11, 4rem);
+    gap: 1.8rem;
+
+    & .radio-inner input {
+      height: 4rem;
+      width: 4rem;
+      border-radius: 999%;
+      border: 6px solid var(--shape-button);
+    }
+
+    & .radio-inner input:hover {
+      border: 6px solid var(--shape-hover);
+    }
+
+    & .radio-inner input:checked {
+      outline: 2px solid var(--brand-light);
+    }
+  }
+}
