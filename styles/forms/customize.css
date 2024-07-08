@@ -1,4 +1,10 @@
 .customize {
+
+  & label {
+    font: var(--body-sm-light);
+    color: var(--text-heading);
+  }
+  & .main-color{
   & .radio-wrapper {
     display: grid;
 
@@ -17,7 +23,48 @@
     }
 
     & .radio-inner input:checked {
-      outline: 2px solid var(--brand-light);
+      outline: 4px solid var(--brand-light);
+    }
+  }
+}
+
+  & .theme {
+    & .radio-wrapper {
+      display: grid;
+      gap: .8rem;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+
+      & .radio-inner {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+
+        background-color: var(--shape-button);
+        border-radius: .8rem;
+
+        padding: .4rem .4rem .4rem .8rem;
+
+        & input,
+        & input:focus,
+        & input:hover {
+          all: unset;
+          position: absolute;
+          inset: 0;
+        }
+
+        & img {
+          width: 100%;
+          border-radius: .4rem;
+          object-fit: cover;
+        }
+
+        & label {
+          text-align: center;
+          line-height: auto;
+        }
+      }
     }
   }
 }

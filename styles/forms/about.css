@@ -18,6 +18,7 @@ fieldset {
 
   & label {
     color: var(--text-body);
+    font: var(--body-sm-light);
   }
 
   & input {

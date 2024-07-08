@@ -45,6 +45,7 @@
   --body-md: 400 1.6rem var(--font-open);
   --body-light: 300 1.6rem var(--font-open);
   --body-sm: 600 1.4rem var(--font-open);
+  --body-sm-light: 400 1.4rem var(--font-open);
   --body-xs: 600 1.2rem var(--font-open);
 }
 
