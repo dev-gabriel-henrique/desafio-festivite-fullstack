@@ -5,7 +5,6 @@ input, textarea {
     gap: .8rem;
     color: var(--danger);
     font: var(--body-xs);
-
   }
 }
 
