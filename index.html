@@ -54,12 +54,27 @@
                   id="begin"
                   name="begin"
                   placeholder="DD/MM/AAAA --:--"
+                  required
                 />
+                <div class="error">
+                  <img src="./assets/icons/circle-alert.svg" alt="circulo de alerta">
+                  <span>Campo Obrigatório</span>
+                </div>
               </div>
 
               <div class="input-wrapper">
                 <label for="end">Fim</label>
-                <input lang="pt-br" type="datetime-local" id="end" name="end" />
+                <input
+                  lang="pt-br"
+                  type="datetime-local"
+                  id="end"
+                  name="end"
+                  required
+                />
+                <div class="error">
+                  <img src="./assets/icons/circle-alert.svg" alt="circulo de alerta">
+                  <span>Campo Obrigatório</span>
+                </div>
               </div>
             </div>
 
@@ -130,7 +145,12 @@
                 name="description"
                 id="description"
                 placeholder="Escreva sobre os detalhes do evento"
+                required
               ></textarea>
+              <div class="error">
+                <img src="./assets/icons/circle-alert.svg" alt="circulo de alerta">
+                <span>Campo Obrigatório</span>
+              </div>
             </div>
           </fieldset>
 
@@ -263,10 +283,7 @@
 
                   <div class="radio-inner">
                     <input type="radio" name="theme" id="party" />
-                    <img
-                      src="./assets/image/party.png"
-                      alt="bolo de festas"
-                    />
+                    <img src="./assets/image/party.png" alt="Infantil" />
                     <label for="party">Infantil</label>
                   </div>
 
@@ -274,94 +291,65 @@
                     <input type="radio" name="theme" id="graduation" />
                     <img
                       src="./assets/image/graduation.png"
-                      alt="bolo de festas"
+                      alt="chapeu de faculdade"
                     />
                     <label for="graduation">Formatura</label>
                   </div>
 
                   <div class="radio-inner">
                     <input type="radio" name="theme" id="rings" />
-                    <img
-                      src="./assets/image/rings.png"
-                      alt="Infantil"
-                    />
+                    <img src="./assets/image/rings.png" alt="Infantil" />
                     <label for="rings">Casamento</label>
                   </div>
 
                   <div class="radio-inner">
                     <input type="radio" name="theme" id="baby-tea" />
-                    <img
-                      src="./assets/image/baby-tea.png"
-                      alt="cha de bebe"
-                    />
+                    <img src="./assets/image/baby-tea.png" alt="cha de bebe" />
                     <label for="baby-tea">Chá de bebê</label>
                   </div>
 
                   <div class="radio-inner">
                     <input type="radio" name="theme" id="pot-tea" />
-                    <img
-                      src="./assets/image/pot-tea.png"
-                      alt="cha de panela"
-                    />
+                    <img src="./assets/image/pot-tea.png" alt="cha de panela" />
                     <label for="pot-tea">Chá de panela</label>
                   </div>
 
                   <div class="radio-inner">
                     <input type="radio" name="theme" id="carnival" />
-                    <img
-                      src="./assets/image/carnival.png"
-                      alt="carnaval"
-                    />
+                    <img src="./assets/image/carnival.png" alt="carnaval" />
                     <label for="carnival">Carnaval</label>
                   </div>
 
                   <div class="radio-inner">
                     <input type="radio" name="theme" id="easter" />
-                    <img
-                      src="./assets/image/easter.png"
-                      alt="ovo de pascoa"
-                    />
+                    <img src="./assets/image/easter.png" alt="ovo de pascoa" />
                     <label for="easter">Páscoa</label>
                   </div>
 
                   <div class="radio-inner">
                     <input type="radio" name="theme" id="sao-joao" />
-                    <img
-                      src="./assets/image/sao-joao.png"
-                      alt="festa junina"
-                    />
+                    <img src="./assets/image/sao-joao.png" alt="festa junina" />
                     <label for="sao-joao">Infantil</label>
                   </div>
 
                   <div class="radio-inner">
                     <input type="radio" name="theme" id="halloween" />
-                    <img
-                      src="./assets/image/halloween.png"
-                      alt="aboboras"
-                    />
+                    <img src="./assets/image/halloween.png" alt="aboboras" />
                     <label for="halloween">Halloween</label>
                   </div>
 
                   <div class="radio-inner">
                     <input type="radio" name="theme" id="christmas" />
-                    <img
-                      src="./assets/image/christmas.png"
-                      alt="Presentes"
-                    />
+                    <img src="./assets/image/christmas.png" alt="Presentes" />
                     <label for="christmas">Natal</label>
                   </div>
 
                   <div class="radio-inner">
                     <input type="radio" name="theme" id="other" />
-                    <img
-                      src="./assets/image/other.png"
-                      alt="Outros"
-                    />
+                    <img src="./assets/image/other.png" alt="Outros" />
                     <label for="other">Outros</label>
                   </div>
-
                 </div>
-
               </div>
             </div>
           </fieldset>
