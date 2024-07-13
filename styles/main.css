@@ -9,7 +9,7 @@
   & header h1 {
     font: var(--heading-md);
     color: var(--text-heading);
-    margin-bottom: 4rem;
+    margin-bottom: -.8rem;
   }
 
   & form {
@@ -32,6 +32,14 @@
 
       color: var(--text-heading);
       font: 600 1.6rem var(--font-open);
+
+      &:hover {
+        background-color: var(--brand-mid);
+      }
+
+      &:active {
+        transform: scale(.8);
+      }
 
       & img {
         max-width: 2rem;
