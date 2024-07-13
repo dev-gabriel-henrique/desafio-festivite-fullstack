@@ -1,7 +1,7 @@
-<h1 align="center"> Plataforma de Agendamento </h1>
+<h1 align="center"> Festivite </h1>
 
 <p align= "center">
-Desafio feito atráves do curso Fullstack da Rocketseat!
+Desafio feito atráves do curso Fullstack da Rocketseat! Gerador de Convites, online.
 </p>
 
 <p align="center">
