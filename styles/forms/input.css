@@ -9,22 +9,32 @@ input, textarea {
 }
 
 input, select, textarea {
-  width: 100%;
-  border-radius: .8rem;
   appearance: none;
+
+  max-width: 100%;
+  border-radius: .8rem;
   outline: 1px solid var(--input-stroke);
   border: 2px solid transparent;
+  background-color: var(--input-base);
+
+  color: var(--text-body);
+  font: var(--body-md);
+  
   padding: 1.6rem;
 }
 
 input:focus,
-textarea:focus {
-  border: 1px solid var(--brand-light);
+select:focus,
+textarea:focus,
+input[type='datetime']:focus-within {
+  outline: .25rem solid var(--brand-light);
+  border-color: var(--brand-dark);
+  outline-offset: .1px;
 }
 
 input:invalid,
 textarea:invalid {
-  border: 1px solid var(--danger);
+  outline: 0.125rem solid var(--danger);
 }
 
 .input-wrapper, .text-area {
@@ -35,4 +45,40 @@ textarea:invalid {
 
 label {
   font: 400 1.4rem var(--font-open);
+}
+
+input[required] + .error {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  font: var(--body-xs);
+  color: var(--danger);
+}
+
+textarea:not(:focus):invalid + .error {
+  opacity: 0;
+}
+
+textarea[required] + .error {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  font: var(--body-xs);
+  color: var(--danger);
+}
+
+input:not(:focus):invalid + .error {
+  opacity: 0;
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+input[type="datetime-local"]::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
 }

@@ -1,32 +1,8 @@
-fieldset {
-  border: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-  margin-bottom: 4.8rem;
-
-  & legend {
-    align-items: center;
-    gap: 1.2rem;
-    margin-bottom: 2.1rem;
-
-    & h2 {
-      color: var(--text-heading);
-      font: var(--heading-sm);
-    }
-  }
-
+.about{
+  
   & label {
     color: var(--text-body);
     font: var(--body-sm-light);
-  }
-
-  & input {
-    border: 1px solid var(--input-stroke);
-    background-color: var(--input-base);
-
-    color: var(--text-body);
-    font: var(--body-md);
   }
 
   & .date {
@@ -34,24 +10,8 @@ fieldset {
       width: 100%;
     }
   }
-}
 
-input[type="datetime-local" i]::-webkit-calendar-picker-indicator {
-  display: none;
-  -webkit-appearance: none;
-}
-
-
-input[type="datetime-local"]::-webkit-calendar-picker-indicator {
-  display: none;
-  -webkit-appearance: none;
-}
-
-input[type="datetime-local"]::-webkit-inner-spin-button {
-  display: none;
-  -webkit-appearance: none;
-}
-.address{
+  .address {
   
 & .radio-wrapper {
   border-radius: .8rem;
@@ -65,6 +25,8 @@ input[type="datetime-local"]::-webkit-inner-spin-button {
 
   padding: .4rem;
 
+  &:focus-within {
+    outline: 1px solid var(--brand-light);
   }
 
   & .radio-inner {
@@ -101,6 +63,7 @@ input[type="datetime-local"]::-webkit-inner-spin-button {
       }
       }
     }
+  }
 
     & .input-wrapper {
       width: 100%;
@@ -116,3 +79,4 @@ input[type="datetime-local"]::-webkit-inner-spin-button {
       height: 13.6rem;
     }
   }
+}

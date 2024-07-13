@@ -1,0 +1,41 @@
+.terms {
+  padding-top: 4rem;
+  border-top: 1px solid var(--input-stroke);
+
+  & .term-box {
+    
+    & .term-wrapper {
+      display: flex;
+      gap: 1.2rem;
+      padding: .4rem;
+      align-items: center;
+      color: var(--text-body);
+
+      & input {
+        width: 2rem;
+        height: 2rem;
+        border-radius: .4rem;
+        padding: 0;
+
+        &:hover {
+          background-color: var(--input-hover);
+        }
+
+        &:checked {
+          background-image: url(../../assets/icons/check.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+
+          border: 1px solid var(--brand-light);
+          outline: none;
+        }
+      }
+
+      & a {
+        text-decoration: underline;
+        color: var(--brand-mid);
+      }
+    }
+  } 
+}

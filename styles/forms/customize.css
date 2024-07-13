@@ -79,8 +79,16 @@
   }
 }
 
-.switch {
-  padding-block: .8rem;
+#details {
+  align-items: center;
+  gap: 2.8rem;
+  margin-bottom: 4.8rem;
+
+  & label {
+    color: var(--text-body);
+  }
+
+& .switch {
   align-items: center;
   gap: 1.2rem;
   position: relative;
@@ -94,7 +102,11 @@
 
   & #switch {
     position: relative;
-    width: 6.4rem;
+    max-width: 100%;
+
+    &:focus-within {
+      outline: 2px solid var(--brand-light);
+    }
 
     & span {
       display: block;
@@ -110,7 +122,6 @@
 
       & input {
         position: absolute;
-        z-index: 1;
         left: 7%;
         top: 10%;
 
@@ -124,18 +135,17 @@
         outline: none;
         border: none;
 
+        &:focus {
+          outline: .5px solid var(--brand-dark);
+        }
+
         &:checked {
           transform: translateX(95%);
           background-color: var(--text-heading);
+        }
 
           &:checked + span {
             background-color: var(--brand-light);
-
-            }
-
-            &:has(:enabled) + p .dark {
-              display: none;
-            }
           }
         }
       }
@@ -143,16 +153,68 @@
 
     .cover {
       display: flex;
-      flex-direction: column;
-      & label {
-        margin-bottom: 1.2rem;
-      }
+      gap: 1.2rem;
+      position: relative;
+      align-items: center;
+      max-width: 100%;
 
-      & input, 
-      input:hover,
-      input:focus {
-        all: unset;
-        inset: 0;
+      &:focus-within {
+        outline: 1px solid var(--brand-dark);
       }
-    }
+        
+        & .btn {
+          border: none;
+          border-radius: .8rem;
+          background-color: var(--shape-button);
+          padding: 1.2rem;
+          
+          display: flex;
+          gap: .8rem;
+          align-items: center;
+          
+          & p {            
+            color: var(--text-heading);
+            font: var(--body-sm);
+          }
 
+          &:active {
+            transform: scale(.8);
+          }
+
+          &:hover {
+            background-color: var(--shape-hover);
+          }
+          }
+
+          & input {
+            background-color: transparent;
+            color: transparent;
+            border: none;
+            outline: none;
+            height: 4.3rem;
+            width: 11.7rem;
+            position: absolute;
+
+            &:hover {
+              background-color: var(--shape-hover);
+              opacity: 0.3;
+            }
+
+            &:active {
+              transform: scale(0.95);
+            }
+          }
+
+          & input::file-selector-button{
+            background-color: transparent;
+            color: transparent;
+            border: none;
+
+          }
+
+          & label {
+            font: var(--body-md);
+            color: var(--input-placeholder);
+          }
+          }
+        }

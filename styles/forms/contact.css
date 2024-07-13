@@ -1,0 +1,11 @@
+.contact {
+
+  & label {
+    color: var(--text-body);
+    font: var(--body-sm-light);
+  }
+
+  & .input-wrapper {
+    width: 100%;
+  }
+}

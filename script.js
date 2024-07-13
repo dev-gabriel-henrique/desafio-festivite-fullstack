@@ -11,3 +11,7 @@ toggleSwitch.addEventListener('change', function() {
     lightLabel.classList.add('hidden');
   }
 });
+
+document.querySelector('#cover-photo').addEventListener('change', function () {
+  document.querySelector('.text').textContent = this.files[0].name;
+})

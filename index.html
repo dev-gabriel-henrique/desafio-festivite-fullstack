@@ -30,7 +30,7 @@
 
         <form>
           <fieldset class="about">
-            <legend class="flex">
+            <legend>
               <img src="./assets/icons/calendar.svg" alt="calendario" />
               <h2>Sobre o evento</h2>
             </legend>
@@ -155,7 +155,7 @@
           </fieldset>
 
           <fieldset class="customize">
-            <legend class="flex">
+            <legend>
               <img src="./assets/icons/paintbrush-vertical.svg" alt="" />
               <h2>Personalização</h2>
             </legend>
@@ -367,15 +367,71 @@
 
                     <label class="dark" for="toggle-switch">Escuro</label>
                     
-                    <label class="light" for="toggle-switch">Claro</label>
+                    <label class="light hidden" for="toggle-switch">Claro</label>
                   </div>
             </div>
+
+            <div class="input-wrapper">
+              <label>Foto de Capa</label>
+
   
             <div class="cover">
-              <label for="cover-photo">Foto de Capa</label>
+              <label class="btn" for="cover-photo"><img src="./assets/icons/upload.svg" alt="upload btn"> <p> Selecionar</p></label>
               <input type="file" name="cover-photo" id="cover-photo">
+              
+              <label for="cover-photo" class="text">Nenhum arquivo selecionado</label>
+            </div>
+            </div>
+          </div>
+          </fieldset>
+
+          <fieldset class="contact">
+            <legend><img src="./assets/icons/contact.svg" alt="agenda de contatos"> <h2>Dados para contato</h2></legend>
+
+            <div class="input-wrapper">
+              <label for="name">Nome</label>
+            <input type="text" name="name" placeholder="Nome completo" required>
+
+            <div class="error">
+              <img src="./assets/icons/circle-alert.svg" alt="circulo de alerta">
+              <small>Campo Obrigatório</small>
+            </div>
+            </div>
+
+            <div class="address flex gap-16">
+              <div class="input-wrapper">
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="exemplo@email.com" name="email">
+              </div>
+
+              <div class="input-wrapper">
+                <label for="phone">Telefone</label>
+                <input type="tel" name="phone" id="phone" placeholder="(99)99999-9999">
+              </div>
+            </div>
+
+          </fieldset>
+
+          <fieldset class="terms">
+            <div class="term-box">
+            <div class="term-wrapper">
+              <input type="checkbox" name="terms" id="terms">
+              <label for="terms">Li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de Privacidade</a></label>
+            </div>
+
+            <div class="term-wrapper">
+              <input type="checkbox" name="promo-email" id="promo-email">
+              <label for="promo-email">Aceito receber atualizações e promoções por e-mail</label>
+            </div>
+
+            <div class="term-wrapper">
+              <input type="checkbox" name="promo-sms" id="promo-sms">
+              <label for="promo-sms">Aceito receber atualizações e promoções por SMS</label>
+            </div>
             </div>
           </fieldset>
+
+          <button class="generate" value="invite"><img src="./assets/icons/ticket.svg" alt="convite">Gerar Convite</button>
 
         </div>
         </form>
