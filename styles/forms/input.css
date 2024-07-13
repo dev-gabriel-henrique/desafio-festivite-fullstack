@@ -56,7 +56,7 @@ input[required] + .error {
   color: var(--danger);
 }
 
-textarea:not(:focus):invalid + .error {
+textarea:not(:focus):valid + .error {
   opacity: 0;
 }
 
@@ -69,7 +69,7 @@ textarea[required] + .error {
   color: var(--danger);
 }
 
-input:not(:focus):invalid + .error {
+input:not(:focus):valid + .error {
   opacity: 0;
 }
 
