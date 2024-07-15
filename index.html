@@ -54,6 +54,7 @@
                   id="begin"
                   name="begin"
                   placeholder="DD/MM/AAAA --:--"
+                  max="9999-12-31T23:59"
                   required
                 />
                 <div class="error">
@@ -69,6 +70,7 @@
                   type="datetime-local"
                   id="end"
                   name="end"
+                  max="9999-12-31T23:59"
                   required
                 />
                 <div class="error">
@@ -406,7 +408,7 @@
 
               <div class="input-wrapper">
                 <label for="phone">Telefone</label>
-                <input type="tel" name="phone" id="phone" placeholder="(99)99999-9999">
+                <input type="tel" name="phone" id="phone" placeholder="(99)99999-9999" maxlength="11">
               </div>
             </div>
 
